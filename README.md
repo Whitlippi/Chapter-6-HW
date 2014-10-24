@@ -9,6 +9,8 @@ Chapter-6-HW
   c) f can at times be acceptable to use single letter variable names
   d) t
   e) f 
+  
+3: Symbolic constants simplify program maintenance, make code more readable, and its easy to change them into variables if you need to. 
 4:
  B
 
