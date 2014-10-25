@@ -66,7 +66,7 @@ public int digitSwitch(int n) {
 	
 15:
  int minDiff = (60-curMin + depMin)%60;
- if ((60-curMin + depMin)<60) depHour -= 1; 
+ if ((60-curMin + depMin)<60 && depHour > curHour) depHour -= 1; 
  System.out.println((depHour-curHour) + " hours and " + minDiff + " minutes.";
 16:
   See Github file
