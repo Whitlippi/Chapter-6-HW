@@ -36,10 +36,37 @@ Chapter-6-HW
   final double g = 16.0;
   double t = 35.5;
   System.out.print ("The travel distance is ");
-  System.out.println(1.0/2 * g*t*t);
+  System.out.println(1.0/2 *g*t*t);
   
 12:
   Should be: 
      double temp;
+13:
+public int digitSwitch(int n) {
+  int unit = n%10;
+  int tens = n%100;
+  int rest = n/100;
+  return (rest * 100) + (unit * 10) + (tens/10);
+}
+
+14:
+	public int dayOfWeekJan(int day, int dayOfWeek1) {
+		int dayOfWeek = 0;
+		if (day == 1){
+			dayOfWeek = dayOfWeek1;
+		}else {
+			if (dayOfWeekJan(day-1,dayOfWeek1) < 6){
+				dayOfWeek = dayOfWeekJan(day-1,dayOfWeek1) + 1;
+			}else if (dayOfWeekJan(day-1,dayOfWeek1) == 6){
+				dayOfWeek = 0;
+			}
+		}
+		return dayOfWeek;
+	}
+	
+15:
+ int minDiff = (60-curMin + depMin)%60;
+ if ((60-curMin + depMin)<60) depHour -= 1; 
+ System.out.println((depHour-curHour) + " hours and " + minDiff + " minutes.";
 16:
   See Github file
